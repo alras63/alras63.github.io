@@ -3,7 +3,7 @@ $(document).ready(function() {
 });
 
 function initTimer() {
-	var endDate = new Date(2019, 0, 1, 0, 0, 0, 0); //Дата до которой таймер работает
+	var endDate = new Date(2018, 11, 23, 17, 01, 0, 0); //Дата до которой таймер работает
 	var currentDate = new Date(); //Текущая дата
 	var seconds = (endDate - currentDate)/1000; //получаем время в секундах до окончания 
 	if (seconds > 0) {
@@ -25,7 +25,7 @@ function initTimer() {
 					if (minutes == 0) {
 						if (hours == 0) {
 							if (days == 0) {
-								showMessage(timerId);
+								$('h1').html('C Новым, 2019 годом!');
 							} else {
 								days--;
 								hours = 23;

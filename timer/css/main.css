@@ -11,7 +11,8 @@ body {
 	font-family: "Pribambas";
 	color: #fff;
 	background-image: url(../images/bg.png);
-	
+	background-position: top center;
+	background-cover: cover;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
